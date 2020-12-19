@@ -1,7 +1,5 @@
-export const getPoem = (poems, request, scale) => {
-
-  const getValue = poems.filter(item => item.request === request && item.scale === scale);
-  const randomness = getValue[Math.floor(Math.random() * (getValue.length))];
-  return randomness
-
+export const getPoem = (poems, problem, mood) => {
+  const filteredPoems = poems.filter(item => item.problem === problem && item.mood === mood);
+  const randomPoem = filteredPoems[Math.floor(Math.random() * (filteredPoems.length))];
+  return randomPoem
 };

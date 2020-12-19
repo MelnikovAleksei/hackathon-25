@@ -1,234 +1,112 @@
 import React from 'react';
 
-export const Form = () => {
-  const [department, setDepartment] = React.useState('general');
-  const [mood, setMood] = React.useState('unspeakable');
+import { poems } from '../data/poems';
+import { getElementsFromArrByValue } from '../utils/getElementsFromArrByValue';
+import { getListOfUniqProp } from '../utils/getListOfUniqProp';
 
-  const handleChangeDepartment = (evt) => {
-    const { value } = evt.target;
-    setDepartment(value);
+export const Form = ({ handleSubmit }) => {
+
+  const [problem, setProblem] = React.useState('');
+  const [mood, setMood] = React.useState('');
+
+  const [currentPoems, setCurrentPoems] = React.useState([]);
+
+  const [listOfMoods, setListOfMoods] = React.useState([]);
+
+  const [listOfProblems, setListOfProblems] = React.useState(null);
+
+  const resetForm = () => {
+    setProblem('');
+    setMood('');
   }
 
-  const handleChangeMood = (evt) => {
+  const onChangeProblem = (evt) => {
+    const { value } = evt.target;
+    setProblem(value);
+    setCurrentPoems(getElementsFromArrByValue(poems, 'problem', value));
+  }
+
+  const onChangeMood = (evt) => {
     const { value } = evt.target;
     setMood(value);
   }
 
-  const handleSubmit = (evt) => {
+  const onSubmit = (evt) => {
     evt.preventDefault();
+    handleSubmit(problem, mood);
+    resetForm();
   }
+
+  React.useEffect(() => {
+    setListOfProblems(getListOfUniqProp(poems, 'problem'));
+  }, [])
+
+  React.useEffect(() => {
+    setListOfMoods(getListOfUniqProp(currentPoems, 'mood'));
+  }, [currentPoems])
 
   return (
     <form
       className="form"
       name="Получить стихотворную строку"
-      onSubmit={handleSubmit}
+      onSubmit={onSubmit}
     >
       <fieldset
         className="form__fieldset"
       >
-        <legend
-          className="form__legend"
-        >
-          Выберите департамент
-        </legend>
-        <div
-          className="form__container"
-        >
-          <label
-            className="form__label"
-            htmlFor="departmentOfCulture"
+        {listOfProblems &&
+          <legend
+            className="form__legend"
           >
-            Культуры
-            <input
-              className="form__input-radio"
-              type="radio"
-              id="departmentOfCulture"
-              name="department"
-              value="culture"
-              checked={department === 'culture'}
-              onChange={handleChangeDepartment}
-            />
-          </label>
-          <label
-            className="form__label"
-            htmlFor="departmentOfHousingAndCommunalServices"
-          >
-            ЖКХ
-            <input
-              className="form__input-radio"
-              type="radio"
-              id="departmentOfHousingAndCommunalServices"
-              name="department"
-              value="housingAndCommunalServices"
-              checked={department === 'housingAndCommunalServices'}
-              onChange={handleChangeDepartment}
-            />
-          </label>
-          <label
-            className="form__label"
-            htmlFor="departmentOfTradeAndServices"
-          >
-            Торговли и услуг
-            <input
-              className="form__input-radio"
-              type="radio"
-              id="departmentOfTradeAndServices"
-              name="department"
-              value="tradeAndServices"
-              checked={department === 'tradeAndServices'}
-              onChange={handleChangeDepartment}
-            />
-          </label>
-          <label
-            className="form__label"
-            htmlFor="departmentOfNaturalResourcesAndEnvironmentalProtection"
-          >
-            Природопользования и окружающей среды
-            <input
-              className="form__input-radio"
-              type="radio"
-              id="departmentOfNaturalResourcesAndEnvironmentalProtection"
-              name="department"
-              value="naturalResourcesAndEnvironmentalProtection"
-              checked={department === 'naturalResourcesAndEnvironmentalProtection'}
-              onChange={handleChangeDepartment}
-            />
-          </label>
-          <label
-            className="form__label"
-            htmlFor="departmentOfLabor"
-          >
-            Труда
-            <input
-              className="form__input-radio"
-              type="radio"
-              id="departmentOfLabor"
-              name="department"
-              value="labor"
-              checked={department === 'labor'}
-              onChange={handleChangeDepartment}
-            />
-          </label>
-          <label
-            className="form__label"
-            htmlFor="departmentOfHealth"
-          >
-            Здравоохранения
-            <input
-              className="form__input-radio"
-              type="radio"
-              id="departmentOfHealth"
-              name="department"
-              value="health"
-              checked={department === 'health'}
-              onChange={handleChangeDepartment}
-            />
-          </label>
-          <label
-            className="form__label"
-            htmlFor="departmentOfConstruction"
-          >
-            Строительства
-            <input
-              className="form__input-radio"
-              type="radio"
-              id="departmentOfConstruction"
-              name="department"
-              value="construction"
-              checked={department === 'construction'}
-              onChange={handleChangeDepartment}
-            />
-          </label>
-          <label
-            className="form__label"
-            htmlFor="departmentOfDistrictAdministration"
-          >
-            Управа района
-            <input
-              className="form__input-radio"
-              type="radio"
-              id="departmentOfDistrictAdministration"
-              name="department"
-              value="districtAdministration"
-              checked={department === 'districtAdministration'}
-              onChange={handleChangeDepartment}
-            />
-          </label>
-          <label
-            className="form__label"
-            htmlFor="departmentOfGeneral"
-          >
-            Общий
-            <input
-              className="form__input-radio"
-              type="radio"
-              id="departmentOfGeneral"
-              name="department"
-              value="general"
-              checked={department === 'general'}
-              onChange={handleChangeDepartment}
-            />
-          </label>
-        </div>
+            Выберите проблему
+          </legend>
+        }
+          {listOfProblems && listOfProblems.map((elem, id) => (
+            <label
+              className="form__label"
+              key={id}
+            >
+              {elem}
+              <input
+                className="form__input-radio"
+                type="radio"
+                name="problem"
+                value={elem}
+                checked={problem === elem}
+                onChange={onChangeProblem}
+              />
+            </label>
+          ))}
       </fieldset>
-      <fieldset>
-        <legend
-          className="form__legend"
-        >
-          Выберите настроение
-        </legend>
-        <div>
-          <label
-            className="form__label"
-            htmlFor="moodAngry"
+      {listOfMoods.length > 0 &&
+        <fieldset>
+          <legend
+            className="form__legend"
           >
-            Сердитое
-            <input
-              className="form__input-radio"
-              type="radio"
-              id="moodAngry"
-              name="mood"
-              value="angry"
-              checked={mood === 'angry'}
-              onChange={handleChangeMood}
-            />
-          </label>
-          <label
-            className="form__label"
-            htmlFor="moodKindly"
-          >
-            Доброжелательное
-            <input
-              className="form__input-radio"
-              type="radio"
-              id="moodKindly"
-              name="mood"
-              value="kindly"
-              checked={mood === 'kindly'}
-              onChange={handleChangeMood}
-            />
-          </label>
-          <label
-            className="form__label"
-            htmlFor="moodUnspeakable"
-          >
-            Невыразимое
-            <input
-              className="form__input-radio"
-              type="radio"
-              id="moodUnspeakable"
-              name="mood"
-              value="unspeakable"
-              checked={mood === 'unspeakable'}
-              onChange={handleChangeMood}
-            />
-          </label>
-        </div>
-      </fieldset>
+            Выберите проблему
+          </legend>
+          {listOfMoods.map((elem, id) => (
+            <label
+              className="form__label"
+              key={id}
+            >
+              {elem}
+              <input
+                className="form__input-radio"
+                type="radio"
+                name="mood"
+                value={elem}
+                checked={mood === elem}
+                onChange={onChangeMood}
+              />
+            </label>
+          ))}
+        </fieldset>
+      }
       <button
         className="form__button-submit"
         type="sumbit"
+        disabled={mood === '' || problem === ''}
       >
         Получить строку
       </button>
