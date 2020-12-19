@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/MelnikovAleksei/hackathon-25/static/js/main.1ff6dfe5.chunk.js",
+    "main.js.map": "/MelnikovAleksei/hackathon-25/static/js/main.1ff6dfe5.chunk.js.map",
+    "runtime-main.js": "/MelnikovAleksei/hackathon-25/static/js/runtime-main.bc3f9f6b.js",
+    "runtime-main.js.map": "/MelnikovAleksei/hackathon-25/static/js/runtime-main.bc3f9f6b.js.map",
+    "static/js/2.c914b5f5.chunk.js": "/MelnikovAleksei/hackathon-25/static/js/2.c914b5f5.chunk.js",
+    "static/js/2.c914b5f5.chunk.js.map": "/MelnikovAleksei/hackathon-25/static/js/2.c914b5f5.chunk.js.map",
+    "static/js/3.932a622a.chunk.js": "/MelnikovAleksei/hackathon-25/static/js/3.932a622a.chunk.js",
+    "static/js/3.932a622a.chunk.js.map": "/MelnikovAleksei/hackathon-25/static/js/3.932a622a.chunk.js.map",
+    "index.html": "/MelnikovAleksei/hackathon-25/index.html",
+    "static/js/2.c914b5f5.chunk.js.LICENSE.txt": "/MelnikovAleksei/hackathon-25/static/js/2.c914b5f5.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bc3f9f6b.js",
+    "static/js/2.c914b5f5.chunk.js",
+    "static/js/main.1ff6dfe5.chunk.js"
+  ]
+}
