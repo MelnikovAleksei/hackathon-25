@@ -18,6 +18,7 @@ export const Form = ({ handleSubmit }) => {
   const resetForm = () => {
     setProblem('');
     setMood('');
+    setListOfMoods([]);
   }
 
   const onChangeProblem = (evt) => {
@@ -83,7 +84,7 @@ export const Form = ({ handleSubmit }) => {
           <legend
             className="form__legend"
           >
-            Выберите проблему
+            Выберите настроение
           </legend>
           {listOfMoods.map((elem, id) => (
             <label
