@@ -1,0 +1,20 @@
+.modal {
+  position: fixed;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: coral;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+}
