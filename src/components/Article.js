@@ -16,7 +16,11 @@ export const Article = ({ currentPoem }) => {
       </header>
       <p
         className="article__text"
-        style={{whiteSpace: "pre-line"}}
+        style={{
+          whiteSpace: "pre-line",
+          overflowY: "scroll",
+          maxHeight: 250,
+        }}
       >
         {currentPoem.text}
       </p>
