@@ -67,7 +67,6 @@ export const Form = ({ handleSubmit }) => {
               className="form__label"
               key={id}
             >
-              {elem}
               <input
                 className="form__input-radio"
                 type="radio"
@@ -76,6 +75,7 @@ export const Form = ({ handleSubmit }) => {
                 checked={problem === elem}
                 onChange={onChangeProblem}
               />
+              {elem}
             </label>
           ))}
       </fieldset>
@@ -91,7 +91,6 @@ export const Form = ({ handleSubmit }) => {
               className="form__label"
               key={id}
             >
-              {elem}
               <input
                 className="form__input-radio"
                 type="radio"
@@ -100,6 +99,7 @@ export const Form = ({ handleSubmit }) => {
                 checked={mood === elem}
                 onChange={onChangeMood}
               />
+              {elem}
             </label>
           ))}
         </fieldset>
