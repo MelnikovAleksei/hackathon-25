@@ -12,6 +12,14 @@
 @import url(./blocks/main/__title/main__title.css);
 @import url(./blocks/main/__subtitle/main__subtitle.css);
 
+@import url(./blocks/form/form.css);
+@import url(./blocks/form/__title/form__title.css);
+@import url(./blocks/form/__fieldset/form__fieldset.css);
+@import url(./blocks/form/__legend/form__legend.css);
+@import url(./blocks/form/__label/form__label.css);
+@import url(./blocks/form/__input-radio/form__input-radio.css);
+@import url(./blocks/form/__button-submit/form__button-submit.css);
+
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__title/footer__title.css);
 @import url(./blocks/footer/__list/footer__list.css);

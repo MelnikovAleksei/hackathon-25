@@ -1,0 +1,31 @@
+.form__button-submit {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1;
+  text-transform: uppercase;
+  padding: 16px 0px;
+  color: #FFFFFF;
+  background: #001AFF;
+  border-radius: 8px;
+  min-width: 269px;
+  display: block;
+  margin: 0 auto;
+}
+
+.form__button-submit:disabled {
+  background: #9aa4ff;
+}
+
+@media screen and (max-width: 300px) {
+  .form__button-submit {
+    min-width: 200px;
+  }
+}
+
+@media screen and (max-width: 240px) {
+  .form__button-submit {
+    min-width: 160px;
+  }
+}

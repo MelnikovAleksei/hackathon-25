@@ -52,6 +52,11 @@ export const Form = ({ handleSubmit }) => {
       name="Получить стихотворную строку"
       onSubmit={onSubmit}
     >
+      <h3
+        className="form__title"
+      >
+        Форма поиска инициативы
+      </h3>
       <fieldset
         className="form__fieldset"
       >
@@ -80,7 +85,9 @@ export const Form = ({ handleSubmit }) => {
           ))}
       </fieldset>
       {listOfMoods.length > 0 &&
-        <fieldset>
+        <fieldset
+          className="form__fieldset"
+        >
           <legend
             className="form__legend"
           >
@@ -109,7 +116,7 @@ export const Form = ({ handleSubmit }) => {
         type="sumbit"
         disabled={mood === '' || problem === ''}
       >
-        Получить строку
+        Найти стихотворение
       </button>
     </form>
   )

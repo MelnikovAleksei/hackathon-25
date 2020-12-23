@@ -1,0 +1,12 @@
+.form__label {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 8px 26.5px 8px 26.5px;
+  color: #000000;
+  height: 20px;
+  display: flex;
+  align-items: center;
+}
