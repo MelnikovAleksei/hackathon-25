@@ -7,6 +7,13 @@
   padding: 44px 25px 0px 25px;
 }
 
+@media screen and (max-height: 500px) {
+  .modal {
+    padding-top: 8px;
+    top: 5%;
+  }
+}
+
 .ReactModal__Overlay {
   opacity: 0;
   transition: opacity .3s ease;

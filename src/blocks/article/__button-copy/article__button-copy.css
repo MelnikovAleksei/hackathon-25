@@ -27,3 +27,10 @@
 .article__button-copy:hover {
   font-style: italic;
 }
+
+
+@media screen and (max-height: 500px) {
+  .article__button-copy {
+    margin: 10px auto;
+  }
+}

@@ -23,3 +23,17 @@
   background-color: #001AFF;
   outline: 1px solid  #001AFF;
 }
+
+@media screen and (max-height: 500px) {
+  .article__text {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    max-height: 100px;
+  }
+}
+
+@media screen and (max-height: 350px) {
+  .article__text {
+    max-height: 70px;
+  }
+}
