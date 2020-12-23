@@ -8,7 +8,7 @@ export const Header = () => {
       <h1
         className="header__title"
       >
-        Генератор гражданской инициативы
+        {'Высоконравственный\n сигнал'}
       </h1>
     </header>
   )
