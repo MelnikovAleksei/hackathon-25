@@ -1,38 +1,42 @@
 import React from 'react';
 
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+
 export const Article = ({ currentPoem }) => {
   return (
     <article
       className="article"
     >
-      <header
-        className="article__header"
+      <h3
+        className="article__title"
       >
-        <h3
-          className="article__title"
-        >
-          {currentPoem.title}
-        </h3>
-      </header>
+        Текст стихотворения найден
+      </h3>
       <p
         className="article__text"
-        style={{
-          whiteSpace: "pre-line",
-          overflowY: "scroll",
-          maxHeight: 250,
-        }}
       >
         {currentPoem.text}
       </p>
-      <footer
-        className="article__footer"
+      <p
+        className="article__text-info"
       >
-        <address
-          className="article__address"
+        {currentPoem.title}
+      </p>
+      <p
+        className="article__text-info"
+      >
+        {`${currentPoem.author} ${currentPoem.date}г.`}
+      </p>
+      <CopyToClipboard
+          text={currentPoem.text}
         >
-          {currentPoem.author}
-        </address>
-      </footer>
+          <button
+            className="article__button-copy"
+            type="button"
+          >
+            Скопировать
+          </button>
+        </CopyToClipboard>
     </article>
   )
 }

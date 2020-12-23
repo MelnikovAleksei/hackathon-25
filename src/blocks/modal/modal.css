@@ -1,9 +1,10 @@
 .modal {
   position: fixed;
-  top: 15%;
+  top: 0%;
   left: 50%;
   transform: translateX(-50%);
-  background-color: coral;
+  box-sizing: border-box;
+  padding: 44px 25px 0px 25px;
 }
 
 .ReactModal__Overlay {

@@ -1,5 +1,4 @@
 import React from 'react';
-import { CopyToClipboard } from 'react-copy-to-clipboard';
 import Modal from 'react-modal';
 
 import { Form } from './Form';
@@ -61,16 +60,6 @@ export const Main = () => {
         shouldCloseOnOverlayClick={true}
       >
         <Article currentPoem={currentPoem}/>
-        <CopyToClipboard
-          text={currentPoem.text}
-        >
-          <button
-            className="modal__button-copy"
-            type="button"
-          >
-            Скопировать текст
-          </button>
-        </CopyToClipboard>
         <button
           className="modal__button-close"
           type="button"

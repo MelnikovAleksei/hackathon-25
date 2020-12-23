@@ -12,11 +12,22 @@
   min-width: 269px;
   display: block;
   margin: 0 auto;
+  border: unset;
+  cursor: pointer;
 }
 
 .form__button-submit:disabled {
   background: #9aa4ff;
 }
+
+.form__button-submit:focus {
+  font-style: italic;
+}
+
+.form__button-submit:hover {
+  font-style: italic;
+}
+
 
 @media screen and (max-width: 300px) {
   .form__button-submit {
