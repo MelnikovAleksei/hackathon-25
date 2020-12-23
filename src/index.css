@@ -7,5 +7,11 @@
 @import url(./blocks/header/header.css);
 @import url(./blocks/header/__title/header__title.css);
 
+@import url(./blocks/footer/footer.css);
+@import url(./blocks/footer/__title/footer__title.css);
+@import url(./blocks/footer/__list/footer__list.css);
+@import url(./blocks/footer/__list-item/footer__list-item.css);
+@import url(./blocks/footer/__list-item-link/footer__list-item-link.css);
+
 @import url(./blocks//modal/modal.css);
 @import url(./blocks/modal/__overlay/modal__overlay.css);

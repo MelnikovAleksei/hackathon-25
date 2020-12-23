@@ -8,7 +8,7 @@ export const Footer = () => {
       <h3
         className="footer__title"
       >
-        Генератор гражданской инициативы
+        {'Высоконравственный\n сигнал'}
       </h3>
       <ul
         className="footer__list"

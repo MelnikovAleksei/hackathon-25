@@ -5,3 +5,11 @@
   font-display: swap;
   src: url('./Roboto-Regular.ttf') format('ttf')
 }
+
+@font-face {
+  font-family: 'Roboto';
+  font-style:  italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url('./Roboto-Italic.ttf') format('ttf')
+}
