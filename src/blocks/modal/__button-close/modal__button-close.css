@@ -10,7 +10,7 @@
   border: none;
   cursor: pointer;
   padding: 10px;
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
 }
 
 .modal__button-close:focus {
