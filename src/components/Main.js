@@ -20,10 +20,12 @@ export const Main = () => {
   }
 
   const onOpenModal = () => {
+    document.body.style.overflow = 'hidden';
     setModalIsOpen(true);
   }
 
   const onCloseModal = () => {
+    document.body.style.overflow = 'auto';
     setModalIsOpen(false);
   }
 
