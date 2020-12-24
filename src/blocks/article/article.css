@@ -1,14 +1,1 @@
-.article {
-  width: 270px;
-}
 
-@media screen and (min-width: 425px) {
-  .article {
-    width: 370px;
-  }
-}
-@media screen and (min-width: 768px) {
-  .article {
-    width: 570px;
-  }
-}
