@@ -18,6 +18,7 @@
 
 .form__button-submit:disabled {
   background: #9aa4ff;
+  cursor: not-allowed;
 }
 
 .form__button-submit:focus {
