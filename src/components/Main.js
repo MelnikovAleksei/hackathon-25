@@ -4,7 +4,7 @@ import Modal from 'react-modal';
 import { Form } from './Form';
 import { Article } from './Article';
 
-import { getPoem } from '../utils/getPoem';
+import { getPoems } from '../utils/getPoem';
 
 import { poems } from '../data/poems';
 
@@ -12,10 +12,17 @@ Modal.setAppElement('#root');
 
 export const Main = () => {
   const [modalIsOpen, setModalIsOpen] = React.useState(false);
+  const [currentPoems, setCurrentPoems] = React.useState(null);
   const [currentPoem, setCurrentPoem] = React.useState(null);
 
+  const getRandomPoem = (selectedPoems) => {
+    return selectedPoems[Math.floor(Math.random() * (selectedPoems.length))];
+  }
+
   const handleSubmit = (problem, mood) => {
-    setCurrentPoem(getPoem(poems, problem, mood));
+    const selectedPoems = getPoems(poems, problem, mood);
+    setCurrentPoems(selectedPoems);
+    setCurrentPoem(getRandomPoem(selectedPoems));
     onOpenModal();
   }
 
@@ -27,6 +34,15 @@ export const Main = () => {
   const onCloseModal = () => {
     document.body.style.overflow = 'auto';
     setModalIsOpen(false);
+  }
+
+  const handleReSearchPoem = () => {
+    const newPoem = getRandomPoem(currentPoems);
+    if (newPoem !== currentPoem) {
+      setCurrentPoem(newPoem);
+    } else {
+      handleReSearchPoem();
+    }
   }
 
   return (
@@ -62,6 +78,17 @@ export const Main = () => {
         shouldCloseOnOverlayClick={true}
       >
         <Article currentPoem={currentPoem}/>
+        {currentPoems.length > 1 ?
+          <button
+            className="modal__re-search-button"
+            type="button"
+            onClick={handleReSearchPoem}
+          >
+            Найти ещё
+          </button>
+        :
+          null
+        }
         <button
           className="modal__button-close"
           type="button"

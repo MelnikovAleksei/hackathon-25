@@ -22,6 +22,7 @@
 
 @import url(./blocks//modal/modal.css);
 @import url(./blocks/modal/__overlay/modal__overlay.css);
+@import url(./blocks/modal/__re-search-button/modal__re-search-button.css);
 @import url(./blocks/modal/__button-close/modal__button-close.css);
 
 @import url(./blocks/article/article.css);
