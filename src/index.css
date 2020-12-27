@@ -1,7 +1,5 @@
 @import url(./vendor/normalize.css);
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto:ital@0;1&display=swap');
-
 @import url(./blocks/root/root.css);
 
 @import url(./blocks/header/header.css);
