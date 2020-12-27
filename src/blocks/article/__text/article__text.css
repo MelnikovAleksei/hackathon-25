@@ -7,4 +7,12 @@
   margin: 10px auto 16px auto;
   color: #000000;
   white-space: pre-line;
+  max-height: 175px;
+  overflow-y: auto;
+}
+
+@media screen and (min-height: 600px) {
+  .article__text {
+    max-height: 300px;
+  }
 }
