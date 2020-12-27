@@ -2,7 +2,7 @@ import React from 'react';
 
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
-export const Article = ({ currentPoem }) => {
+export const Article = ({ currentPoem, currentPoems, handleReSearchPoem }) => {
   return (
     <article
       className="article"
@@ -27,9 +27,12 @@ export const Article = ({ currentPoem }) => {
       >
         {`${currentPoem.author} ${currentPoem.date}г.`}
       </p>
-      <CopyToClipboard
-          text={currentPoem.text}
-        >
+      <div
+        className="article__buttons-container"
+      >
+        <CopyToClipboard
+            text={currentPoem.text}
+          >
           <button
             className="article__button-copy"
             type="button"
@@ -37,6 +40,18 @@ export const Article = ({ currentPoem }) => {
             Скопировать
           </button>
         </CopyToClipboard>
+        {currentPoems.length > 1 ?
+          <button
+            className="article__re-search-button"
+            type="button"
+            onClick={handleReSearchPoem}
+          >
+            Найти ещё
+          </button>
+        :
+          null
+        }
+      </div>
     </article>
   )
 }

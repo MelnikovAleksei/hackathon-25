@@ -77,18 +77,11 @@ export const Main = () => {
         onRequestClose={onCloseModal}
         shouldCloseOnOverlayClick={true}
       >
-        <Article currentPoem={currentPoem}/>
-        {currentPoems.length > 1 ?
-          <button
-            className="modal__re-search-button"
-            type="button"
-            onClick={handleReSearchPoem}
-          >
-            Найти ещё
-          </button>
-        :
-          null
-        }
+        <Article
+          currentPoem={currentPoem}
+          currentPoems={currentPoems}
+          handleReSearchPoem={handleReSearchPoem}
+        />
         <button
           className="modal__button-close"
           type="button"

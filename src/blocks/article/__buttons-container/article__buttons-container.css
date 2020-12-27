@@ -1,0 +1,5 @@
+.article__buttons-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 44px 0;
+}

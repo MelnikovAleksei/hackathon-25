@@ -1,4 +1,4 @@
-.modal__re-search-button {
+.article__re-search-button {
   width: 124px;
   height: 48px;
   background-color: unset;
@@ -20,10 +20,10 @@
   cursor: pointer;
 }
 
-.modal__re-search-button:focus {
+.article__re-search-button:focus {
   font-style: italic;
 }
 
-.modal__re-search-button:hover {
+.article__re-search-button:hover {
   font-style: italic;
 }
