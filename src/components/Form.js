@@ -91,7 +91,7 @@ export const Form = ({ handleSubmit }) => {
           <legend
             className="form__legend"
           >
-            Выберите настроение
+            Выберите ваше настроение
           </legend>
           {listOfMoods.map((elem, id) => (
             <label

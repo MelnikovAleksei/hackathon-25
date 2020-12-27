@@ -10,7 +10,7 @@ export const Article = ({ currentPoem, currentPoems, handleReSearchPoem }) => {
       <h3
         className="article__title"
       >
-        Текст стихотворения найден
+        Текст стихотворения
       </h3>
       <p
         className="article__text"
