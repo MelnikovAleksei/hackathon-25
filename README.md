@@ -65,12 +65,12 @@ npm start
 
 * [Дарья Куриленок](https://www.behance.net/dashakrl) - студентка факультета ["Дизайнер-интерфейсов"](https://praktikum.yandex.ru/interface-designer/)
 
-* Диана Фёдорова - студентка факультета ["Дизайнер-интерфейсов"](https://praktikum.yandex.ru/interface-designer/)
+* [Диана Фёдорова](https://www.behance.net/userdarknec380) - студентка факультета ["Дизайнер-интерфейсов"](https://praktikum.yandex.ru/interface-designer/)
 
 * [Наталия Казилина](https://www.behance.net/nataly_kazilina) - студентка факультета ["Дизайнер-интерфейсов"](https://praktikum.yandex.ru/interface-designer/)
 
 * [Алексей Мельников](https://github.com/MelnikovAleksei) - студент факультета ["Веб-разработчик"](https://praktikum.yandex.ru/web/)
 
-* [Саша Зотов](https://github.com/alzot89) - студент факультета ["Веб-разработчик"](https://praktikum.yandex.ru/web/)
-
 * [enswbl](https://github.com/enswbl) - студент факультета ["Веб-разработчик"](https://praktikum.yandex.ru/web/)
+
+* [Саша Зотов](https://github.com/alzot89) - студент факультета ["Веб-разработчик"](https://praktikum.yandex.ru/web/)
