@@ -45,6 +45,14 @@ export const Main = () => {
     }
   }
 
+  const handleAddToFavorites = () => {
+    localStorage.setItem(currentPoem.id.toString(), JSON.stringify(currentPoem));
+  }
+
+  const handleRemoveFromFavorites = () => {
+    localStorage.removeItem(currentPoem.id.toString());
+  }
+
   return (
     <main
       className="main"
@@ -80,6 +88,8 @@ export const Main = () => {
           currentPoem={currentPoem}
           currentPoems={currentPoems}
           handleReSearchPoem={handleReSearchPoem}
+          handleAddToFavorites={handleAddToFavorites}
+          handleRemoveFromFavorites={handleRemoveFromFavorites}
         />
         <button
           className="modal__button-close"
