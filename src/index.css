@@ -32,9 +32,8 @@
 @import url(./blocks/article/__text/article__text.css);
 @import url(./blocks/article/__text-info/article__text-info.css);
 @import url(./blocks/article/__buttons-container/article__buttons-container.css);
-@import url(./blocks/article/__button-copy/article__button-copy.css);
-@import url(./blocks/article/__re-search-button/article__re-search-button.css);
-@import url(./blocks/article/__button-add/article__button-add.css);
+@import url(./blocks/article/__button/article__button.css);
+@import url(./blocks/article/__button-icon/article__button-icon.css);
 @import url(./blocks/article/__button-open/article__button-open.css);
 @import url(./blocks/article/__link/article__link.css);
 

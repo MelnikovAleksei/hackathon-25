@@ -58,30 +58,42 @@ export const Article = ({ currentPoem, currentPoems, handleReSearchPoem, handleA
             text={currentPoem.text}
           >
           <button
-            className="article__button-copy"
+            className="article__button"
             type="button"
           >
+            <img
+              className="article__button-icon"
+              src={copyButton}
+              alt="Иконка кнопки копирования текста стихотворения"
+            />
             Скопировать
           </button>
         </CopyToClipboard>
         {currentPoems.length > 1 ?
           <button
-            className="article__re-search-button"
+            className="article__button"
             type="button"
             onClick={handleReSearchPoem}
           >
+            <img
+              className="article__button-icon"
+              src={reSearchButton}
+              alt="Иконка кнопки нового поиска стихотворения в базе данных"
+            />
             Найти ещё
           </button>
         :
           null
         }
         <button
-          className="article__button-add"
+          className="article__button"
           type="button"
           onClick={onClickFavorites}
         >
           <img
-
+            className="article__button-icon"
+            src={addButton}
+            alt="Иконка кнопки добавления стихотворения в избранное"
           />
           {isInFavorites ? 'Удалить из избранного' : 'Добавить в избранное'}
         </button>
