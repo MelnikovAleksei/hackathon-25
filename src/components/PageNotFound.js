@@ -23,7 +23,7 @@ export const PageNotFound = () => {
     >
       <Link
         className="main__link"
-        to="/"
+        to="/hackathon-25"
       >
         Вернуться обратно
       </Link>

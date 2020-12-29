@@ -15,7 +15,7 @@ export const Header = () => {
         <NavLink
           className="header__nav-link"
           activeClassName="header__nav-link_active"
-          exact to="/"
+          exact to="/hackathon-25"
         >
           Главная
         </NavLink>

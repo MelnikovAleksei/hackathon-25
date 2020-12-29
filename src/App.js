@@ -13,7 +13,7 @@ function App() {
       <Switch>
         <Route
           exact
-          path="/"
+          path="/hackathon-25"
         >
           <Main />
         </Route>

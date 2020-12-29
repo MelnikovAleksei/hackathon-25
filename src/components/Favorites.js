@@ -68,7 +68,7 @@ export const Favorites = () => {
         </h2>
         <Link
           className="main__link"
-          to="/"
+          to="/hackathon-25"
         >
           Назад
         </Link>

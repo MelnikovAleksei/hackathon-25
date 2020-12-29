@@ -1,7 +1,7 @@
 {
   "name": "hackathon-25",
   "description": "Сервис для генерации гражданской инициативы в виде цитат поэтов",
-  "homepage": ".",
+  "homepage": "https://melnikovaleksei.github.io/hackathon-25/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
