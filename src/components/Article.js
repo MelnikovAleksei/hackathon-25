@@ -1,8 +1,8 @@
 import React from 'react';
 
-import reSearchButton from '../images/re-search-button.svg';
-import copyButton from '../images/copy-button.svg';
-import addButton from '../images/button-add.svg';
+import { ReactComponent as ReSearchButton} from '../images/re-search-button.svg';
+import { ReactComponent as CopyButton} from '../images/copy-button.svg';
+import { ReactComponent as AddButton} from '../images/button-add.svg';
 
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
@@ -61,10 +61,8 @@ export const Article = ({ currentPoem, currentPoems, handleReSearchPoem, handleA
             className="article__button"
             type="button"
           >
-            <img
+            <CopyButton
               className="article__button-icon"
-              src={copyButton}
-              alt="Иконка кнопки копирования текста стихотворения"
             />
             Скопировать
           </button>
@@ -75,10 +73,8 @@ export const Article = ({ currentPoem, currentPoems, handleReSearchPoem, handleA
             type="button"
             onClick={handleReSearchPoem}
           >
-            <img
+            <ReSearchButton
               className="article__button-icon"
-              src={reSearchButton}
-              alt="Иконка кнопки нового поиска стихотворения в базе данных"
             />
             Найти ещё
           </button>
@@ -90,10 +86,8 @@ export const Article = ({ currentPoem, currentPoems, handleReSearchPoem, handleA
           type="button"
           onClick={onClickFavorites}
         >
-          <img
+          <AddButton
             className="article__button-icon"
-            src={addButton}
-            alt="Иконка кнопки добавления стихотворения в избранное"
           />
           {isInFavorites ? 'Удалить из избранного' : 'Добавить в избранное'}
         </button>

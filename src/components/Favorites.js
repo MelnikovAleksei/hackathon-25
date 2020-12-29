@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import removeButton from '../images/button-remove.svg';
-import cancelButton from '../images/button-cancel.svg';
-import copyButton from '../images/copy-button.svg';
+import { ReactComponent as RemoveButton} from '../images/button-remove.svg';
+import { ReactComponent as CancelButton} from '../images/button-cancel.svg';
+import { ReactComponent as CopyButton} from '../images/copy-button.svg';
 
 import Modal from 'react-modal';
 
@@ -99,10 +99,8 @@ export const Favorites = () => {
             type="button"
             onClick={handleRemoveFromFavorites}
           >
-            <img
+            <RemoveButton
               className="modal-options__button-icon"
-              alt="Иконка кнопки убрать из избранного"
-              src={removeButton}
             />
             Удалить из избранного
           </button>
@@ -114,10 +112,8 @@ export const Favorites = () => {
               className="modal-options__button"
                 type="button"
               >
-                <img
+                <CopyButton
                   className="modal-options__button-icon"
-                  alt="Иконка кнопки скопировать текст"
-                  src={copyButton}
                 />
                 Скопировать
               </button>
@@ -128,10 +124,8 @@ export const Favorites = () => {
             type="button"
             onClick={onCloseModal}
           >
-            <img
+            <CancelButton
               className="modal-options__button-icon"
-              alt="Иконка кнопки закрыть модальное окно"
-              src={cancelButton}
             />
             Отмена
           </button>
