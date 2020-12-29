@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const PoemCard = ({ poemData, handleRemoveFromFavorites }) => {
+export const PoemCard = ({ poemData, handleClickOptions }) => {
 
   return (
     <article>
@@ -19,10 +19,10 @@ export const PoemCard = ({ poemData, handleRemoveFromFavorites }) => {
       <button
         type="button"
         onClick={() => {
-          handleRemoveFromFavorites(poemData.id)
+          handleClickOptions(poemData)
         }}
       >
-        Удалить из избранного
+        Ещё
       </button>
     </article>
   )

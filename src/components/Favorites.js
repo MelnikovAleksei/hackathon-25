@@ -1,11 +1,29 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import Modal from 'react-modal';
+
+import { CopyToClipboard } from 'react-copy-to-clipboard';
+
 import { PoemCard } from './PoemCard';
 
 export const Favorites = () => {
 
+  const [modalIsOpen, setModalIsOpen] = React.useState(false);
+
+  const [currentPoem, setCurrentPoem] = React.useState(null);
+
   const [favoritePoems, setFavoritePoems] = React.useState([]);
+
+  const onOpenModal = () => {
+    document.body.style.overflow = 'hidden';
+    setModalIsOpen(true);
+  }
+
+  const onCloseModal = () => {
+    document.body.style.overflow = 'auto';
+    setModalIsOpen(false);
+  }
 
   const setPoems = () => {
     const keys = Object.keys(localStorage);
@@ -16,9 +34,15 @@ export const Favorites = () => {
     setFavoritePoems(poems);
   }
 
-  const handleRemoveFromFavorites = (id) => {
-    localStorage.removeItem(id.toString());
+  const handleRemoveFromFavorites = () => {
+    localStorage.removeItem(currentPoem.id.toString());
     setPoems();
+    onCloseModal();
+  }
+
+  const handleClickOptions = (currentPoem) => {
+    setCurrentPoem(currentPoem);
+    onOpenModal();
   }
 
   React.useEffect(() => {
@@ -38,9 +62,42 @@ export const Favorites = () => {
       </Link>
       <ul>
         {favoritePoems && favoritePoems.map(poem => (
-          <PoemCard key={poem.id} poemData={poem} handleRemoveFromFavorites={handleRemoveFromFavorites}/>
+          <PoemCard
+            key={poem.id}
+            poemData={poem}
+            handleClickOptions={handleClickOptions}
+          />
         ))}
       </ul>
+      <Modal
+        isOpen={modalIsOpen}
+        onRequestClose={onCloseModal}
+        shouldCloseOnOverlayClick={true}
+      >
+        <button
+          type="button"
+          onClick={handleRemoveFromFavorites}
+        >
+          Удалить из избранного
+        </button>
+        {currentPoem &&
+          <CopyToClipboard
+            text={currentPoem.text}
+          >
+            <button
+              type="button"
+            >
+              Скопировать
+            </button>
+          </CopyToClipboard>
+        }
+        <button
+          type="button"
+          onClick={onCloseModal}
+        >
+          Отмена
+        </button>
+      </Modal>
     </>
   )
 }
