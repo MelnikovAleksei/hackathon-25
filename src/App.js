@@ -3,6 +3,7 @@ import { Header } from './components/Header';
 import { Main } from './components/Main';
 import { Favorites } from './components/Favorites';
 import { Footer } from './components/Footer';
+import { PageNotFound } from './components/PageNotFound';
 import { Route, Switch } from 'react-router-dom';
 
 function App() {
@@ -21,8 +22,10 @@ function App() {
         >
           <Favorites />
         </Route>
+        <Route path="*">
+          <PageNotFound />
+        </Route>
       </Switch>
-
       <Footer />
     </div>
   );
