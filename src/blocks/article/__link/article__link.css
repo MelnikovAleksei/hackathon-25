@@ -1,0 +1,10 @@
+.article__link {
+  text-decoration: none;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 1.4;
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: underline;
+}

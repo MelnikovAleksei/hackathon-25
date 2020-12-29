@@ -1,0 +1,20 @@
+.main__link {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  color: #3F3F3F;
+  text-decoration: none;
+  margin: 19px 0;
+}
+
+.main__link:focus {
+  text-decoration: underline;
+  font-style: italic;
+}
+
+.main__link:hover {
+  text-decoration: underline;
+  font-style: italic;
+}

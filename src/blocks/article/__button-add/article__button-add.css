@@ -1,8 +1,8 @@
-.article__re-search-button {
+.article__button-add {
   width: 124px;
   height: 65px;
   background-color: unset;
-  background-image: url(../../../images/re-search-button.svg);
+  background-image: url(../../../images/button-add.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-position-y: 0px;
@@ -21,10 +21,10 @@
   padding: 0 0 4px 0;
 }
 
-.article__re-search-button:focus {
+.article__button-add:focus {
   font-style: italic;
 }
 
-.article__re-search-button:hover {
+.article__button-add:hover {
   font-style: italic;
 }

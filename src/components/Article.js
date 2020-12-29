@@ -1,5 +1,9 @@
 import React from 'react';
 
+import reSearchButton from '../images/re-search-button.svg';
+import copyButton from '../images/copy-button.svg';
+import addButton from '../images/button-add.svg';
+
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 
 export const Article = ({ currentPoem, currentPoems, handleReSearchPoem, handleAddToFavorites, handleRemoveFromFavorites }) => {
@@ -72,9 +76,13 @@ export const Article = ({ currentPoem, currentPoems, handleReSearchPoem, handleA
           null
         }
         <button
+          className="article__button-add"
           type="button"
           onClick={onClickFavorites}
         >
+          <img
+
+          />
           {isInFavorites ? 'Удалить из избранного' : 'Добавить в избранное'}
         </button>
       </div>

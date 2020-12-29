@@ -1,0 +1,13 @@
+.article-card__button-options {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 28px;
+  height: 28px;
+  background: #F2F2F2;
+  border: none;
+  border-radius: 8.4px;
+  background-image: url(../../../images/button-options.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+}

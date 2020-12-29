@@ -1,0 +1,25 @@
+.modal-options {
+  position: fixed;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  width: 100vw;
+  height: 188px;
+  background-color: #ffffff;
+  border-radius: 17px 17px 0 0;
+  padding: 37px 25px 58px 25px;
+}
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transition: opacity .3s ease;
+}
+
+.ReactModal__Overlay--after-open{
+  opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+  opacity: 0;
+}

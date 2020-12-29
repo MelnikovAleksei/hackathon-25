@@ -1,0 +1,15 @@
+.modal-options__button {
+  display: flex;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  color: #000000;
+  background-color: unset;
+  border: none;
+  max-width: 269px;
+  cursor: pointer;
+  margin: 10px 0;
+}

@@ -1,6 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+import removeButton from '../images/button-remove.svg';
+import cancelButton from '../images/button-cancel.svg';
+import copyButton from '../images/copy-button.svg';
+
 import Modal from 'react-modal';
 
 import { CopyToClipboard } from 'react-copy-to-clipboard';
@@ -51,16 +55,27 @@ export const Favorites = () => {
 
 
   return (
-    <>
-      <h2>
-        Избранное
-      </h2>
-      <Link
-        to="/"
+    <main
+      className="main"
+    >
+      <div
+        className="main__container"
       >
-        Назад
-      </Link>
-      <ul>
+        <h2
+          className="main__title"
+        >
+          Избранное
+        </h2>
+        <Link
+          className="main__link"
+          to="/"
+        >
+          Назад
+        </Link>
+      </div>
+      <ul
+        className="main__list"
+      >
         {favoritePoems && favoritePoems.map(poem => (
           <PoemCard
             key={poem.id}
@@ -70,34 +85,58 @@ export const Favorites = () => {
         ))}
       </ul>
       <Modal
+        className="modal-options"
+        overlayClassName="modal-options__overlay"
         isOpen={modalIsOpen}
         onRequestClose={onCloseModal}
         shouldCloseOnOverlayClick={true}
       >
-        <button
-          type="button"
-          onClick={handleRemoveFromFavorites}
+        <div
+          className="modal-options__container-buttons"
         >
-          Удалить из избранного
-        </button>
-        {currentPoem &&
-          <CopyToClipboard
-            text={currentPoem.text}
+          <button
+            className="modal-options__button"
+            type="button"
+            onClick={handleRemoveFromFavorites}
           >
-            <button
-              type="button"
+            <img
+              className="modal-options__button-icon"
+              alt="Иконка кнопки убрать из избранного"
+              src={removeButton}
+            />
+            Удалить из избранного
+          </button>
+          {currentPoem &&
+            <CopyToClipboard
+              text={currentPoem.text}
             >
-              Скопировать
-            </button>
-          </CopyToClipboard>
-        }
-        <button
-          type="button"
-          onClick={onCloseModal}
-        >
-          Отмена
-        </button>
+              <button
+              className="modal-options__button"
+                type="button"
+              >
+                <img
+                  className="modal-options__button-icon"
+                  alt="Иконка кнопки скопировать текст"
+                  src={copyButton}
+                />
+                Скопировать
+              </button>
+            </CopyToClipboard>
+          }
+          <button
+            className="modal-options__button"
+            type="button"
+            onClick={onCloseModal}
+          >
+            <img
+              className="modal-options__button-icon"
+              alt="Иконка кнопки закрыть модальное окно"
+              src={cancelButton}
+            />
+            Отмена
+          </button>
+        </div>
       </Modal>
-    </>
+    </main>
   )
 }
