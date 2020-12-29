@@ -11,13 +11,17 @@ export const Header = () => {
       >
         {'Высоконравственный\n сигнал'}
       </h1>
-      <nav>
+      <nav className="header__nav">
         <NavLink
+          className="header__nav-link"
+          activeClassName="header__nav-link_active"
           exact to="/"
         >
           Главная
         </NavLink>
         <NavLink
+          className="header__nav-link"
+          activeClassName="header__nav-link_active"
           to="/favorites"
         >
           Избранное
