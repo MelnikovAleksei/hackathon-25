@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/hackathon-25/static/css/main.df2f878c.chunk.css",
-    "main.js": "/hackathon-25/static/js/main.9ab3b1f7.chunk.js",
-    "main.js.map": "/hackathon-25/static/js/main.9ab3b1f7.chunk.js.map",
-    "runtime-main.js": "/hackathon-25/static/js/runtime-main.1e7b9e19.js",
-    "runtime-main.js.map": "/hackathon-25/static/js/runtime-main.1e7b9e19.js.map",
-    "static/js/2.266d22a2.chunk.js": "/hackathon-25/static/js/2.266d22a2.chunk.js",
-    "static/js/2.266d22a2.chunk.js.map": "/hackathon-25/static/js/2.266d22a2.chunk.js.map",
-    "static/js/3.b4451519.chunk.js": "/hackathon-25/static/js/3.b4451519.chunk.js",
-    "static/js/3.b4451519.chunk.js.map": "/hackathon-25/static/js/3.b4451519.chunk.js.map",
-    "index.html": "/hackathon-25/index.html",
-    "static/css/main.df2f878c.chunk.css.map": "/hackathon-25/static/css/main.df2f878c.chunk.css.map",
-    "static/js/2.266d22a2.chunk.js.LICENSE.txt": "/hackathon-25/static/js/2.266d22a2.chunk.js.LICENSE.txt",
-    "static/media/button-add.ffa03cb9.svg": "/hackathon-25/static/media/button-add.ffa03cb9.svg",
-    "static/media/button-cancel.16f24f3f.svg": "/hackathon-25/static/media/button-cancel.16f24f3f.svg",
-    "static/media/index.css": "/hackathon-25/static/media/button-options.b55c1cfa.svg",
-    "static/media/button-remove.2d4ad15e.svg": "/hackathon-25/static/media/button-remove.2d4ad15e.svg",
-    "static/media/copy-button.17a1e77e.svg": "/hackathon-25/static/media/copy-button.17a1e77e.svg",
-    "static/media/re-search-button.f8cc0084.svg": "/hackathon-25/static/media/re-search-button.f8cc0084.svg"
+    "main.css": "./static/css/main.b0a12069.chunk.css",
+    "main.js": "./static/js/main.110dbf52.chunk.js",
+    "main.js.map": "./static/js/main.110dbf52.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.2cec91f4.js",
+    "runtime-main.js.map": "./static/js/runtime-main.2cec91f4.js.map",
+    "static/js/2.266d22a2.chunk.js": "./static/js/2.266d22a2.chunk.js",
+    "static/js/2.266d22a2.chunk.js.map": "./static/js/2.266d22a2.chunk.js.map",
+    "static/js/3.b4451519.chunk.js": "./static/js/3.b4451519.chunk.js",
+    "static/js/3.b4451519.chunk.js.map": "./static/js/3.b4451519.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.b0a12069.chunk.css.map": "./static/css/main.b0a12069.chunk.css.map",
+    "static/js/2.266d22a2.chunk.js.LICENSE.txt": "./static/js/2.266d22a2.chunk.js.LICENSE.txt",
+    "static/media/button-add.ffa03cb9.svg": "./static/media/button-add.ffa03cb9.svg",
+    "static/media/button-cancel.16f24f3f.svg": "./static/media/button-cancel.16f24f3f.svg",
+    "static/media/index.css": "./static/media/button-options.b55c1cfa.svg",
+    "static/media/button-remove.2d4ad15e.svg": "./static/media/button-remove.2d4ad15e.svg",
+    "static/media/copy-button.17a1e77e.svg": "./static/media/copy-button.17a1e77e.svg",
+    "static/media/re-search-button.f8cc0084.svg": "./static/media/re-search-button.f8cc0084.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1e7b9e19.js",
+    "static/js/runtime-main.2cec91f4.js",
     "static/js/2.266d22a2.chunk.js",
-    "static/css/main.df2f878c.chunk.css",
-    "static/js/main.9ab3b1f7.chunk.js"
+    "static/css/main.b0a12069.chunk.css",
+    "static/js/main.110dbf52.chunk.js"
   ]
 }
