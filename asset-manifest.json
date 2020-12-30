@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/hackathon-25/static/css/main.62e15eac.chunk.css",
+    "main.css": "/hackathon-25/static/css/main.9e61f51f.chunk.css",
     "main.js": "/hackathon-25/static/js/main.ecffd0c9.chunk.js",
     "main.js.map": "/hackathon-25/static/js/main.ecffd0c9.chunk.js.map",
     "runtime-main.js": "/hackathon-25/static/js/runtime-main.1e7b9e19.js",
@@ -10,7 +10,7 @@
     "static/js/3.b4451519.chunk.js": "/hackathon-25/static/js/3.b4451519.chunk.js",
     "static/js/3.b4451519.chunk.js.map": "/hackathon-25/static/js/3.b4451519.chunk.js.map",
     "index.html": "/hackathon-25/index.html",
-    "static/css/main.62e15eac.chunk.css.map": "/hackathon-25/static/css/main.62e15eac.chunk.css.map",
+    "static/css/main.9e61f51f.chunk.css.map": "/hackathon-25/static/css/main.9e61f51f.chunk.css.map",
     "static/js/2.66e878cf.chunk.js.LICENSE.txt": "/hackathon-25/static/js/2.66e878cf.chunk.js.LICENSE.txt",
     "static/media/button-add.ffa03cb9.svg": "/hackathon-25/static/media/button-add.ffa03cb9.svg",
     "static/media/button-cancel.16f24f3f.svg": "/hackathon-25/static/media/button-cancel.16f24f3f.svg",
@@ -22,7 +22,7 @@
   "entrypoints": [
     "static/js/runtime-main.1e7b9e19.js",
     "static/js/2.66e878cf.chunk.js",
-    "static/css/main.62e15eac.chunk.css",
+    "static/css/main.9e61f51f.chunk.css",
     "static/js/main.ecffd0c9.chunk.js"
   ]
 }
