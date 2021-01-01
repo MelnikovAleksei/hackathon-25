@@ -1,0 +1,12 @@
+.article-card__text {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.2;
+  white-space: pre-line;
+  min-height: 51px;
+  max-height: 101px;
+  overflow-y: auto;
+  margin: 16px 0;
+}

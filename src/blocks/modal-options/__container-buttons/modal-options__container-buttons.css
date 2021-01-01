@@ -1,0 +1,4 @@
+.modal-options__container-buttons {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,0 +1,26 @@
+.article__button-open {
+  min-width: 200px;
+  height: 30px;
+  background-color: unset;
+  margin: 20px 0;
+  border: unset;
+  border-radius: 8px;
+  color: #FFFFFF;
+  background: #001AFF;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.4;
+  cursor: pointer;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.article__button-open:focus {
+  font-style: italic;
+}
+
+.article__button-open:hover {
+  font-style: italic;
+}

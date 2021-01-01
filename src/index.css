@@ -4,10 +4,16 @@
 
 @import url(./blocks/header/header.css);
 @import url(./blocks/header/__title/header__title.css);
+@import url(./blocks/header/__nav/header__nav.css);
+@import url(./blocks/header/__nav-link/header__nav-link.css);
+@import url(./blocks/header/__nav-link/_active/header__nav-link_active.css);
 
 @import url(./blocks/main/main.css);
 @import url(./blocks/main/__title/main__title.css);
+@import url(./blocks/main/__container/main__container.css);
 @import url(./blocks/main/__subtitle/main__subtitle.css);
+@import url(./blocks/main/__link/main__link.css);
+@import url(./blocks/main/__list/main__list.css);
 
 @import url(./blocks/form/form.css);
 @import url(./blocks/form/__title/form__title.css);
@@ -26,8 +32,23 @@
 @import url(./blocks/article/__text/article__text.css);
 @import url(./blocks/article/__text-info/article__text-info.css);
 @import url(./blocks/article/__buttons-container/article__buttons-container.css);
-@import url(./blocks/article/__button-copy/article__button-copy.css);
-@import url(./blocks/article/__re-search-button/article__re-search-button.css);
+@import url(./blocks/article/__button/article__button.css);
+@import url(./blocks/article/__button-icon/article__button-icon.css);
+@import url(./blocks/article/__button-open/article__button-open.css);
+@import url(./blocks/article/__link/article__link.css);
+
+@import url(./blocks/article-card/article-card.css);
+@import url(./blocks/article-card/__text-properties/article-card__text-properties.css);
+@import url(./blocks/article-card/__text-properties-span/article-card__text-properties-span.css);
+@import url(./blocks/article-card/__text/article-card__text.css);
+@import url(./blocks/article-card/__text-info/article-card__text-info.css);
+@import url(./blocks/article-card/__button-options/article-card__button-options.css);
+
+@import url(./blocks/modal-options/modal-options.css);
+@import url(./blocks/modal-options/__overlay/modal-options__overlay.css);
+@import url(./blocks/modal-options/__container-buttons/modal-options__container-buttons.css);
+@import url(./blocks/modal-options/__button-icon/modal-options__button-icon.css);
+@import url(./blocks/modal-options/__button/modal-options__button.css);
 
 @import url(./blocks/footer/footer.css);
 @import url(./blocks/footer/__title/footer__title.css);
