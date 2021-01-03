@@ -1,8 +1,0 @@
-.form__fieldset {
-  padding: 0;
-  border: none;
-}
-
-.form__fieldset:last-of-type {
-  padding-bottom: 36px;
-}
