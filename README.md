@@ -1,70 +1,76 @@
-# Getting Started with Create React App
+# Проектная работа: "Высоконравственный сигнал".
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Создана студентами [Яндекс.Практикум](https://praktikum.yandex.ru/) факультетов ["Дизайнер-интерфейсов"](https://praktikum.yandex.ru/interface-designer/) и ["Веб-разработчик"](https://praktikum.yandex.ru/web/) в рамках предновогоднего хакатона.
 
-## Available Scripts
+## Основная задача хакатона:
 
-In the project directory, you can run:
+> Сделать прототип приложения для гражданских инициатив. На дворе 2025 год, в стране цензура.
 
-### `npm start`
+> Для защиты общественной нравственности к рассмотрению принимаются только обращения, написанные цитатами поэтов-классиков.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+> В общем, публично можно общаться только цитатами поэтов-классиков. Например, оставить предложение перенести парковку или заменить лампочку в подъезде — обо всём этом можно сообщить только в форме стихов.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Описание приложения:
 
-### `npm test`
+"Высоконравственный сигнал" - это прототип приложения для генерации гражданских инициатив в условиях цензуры. Пользователь приложения может выбрать проблему и своё настроение. По заданным параметрам программа найдёт для пользователя стихотворную строку, которая ясно передаст властям суть проблемы. В подборе стихотворений участвовали филологи [Дарья Новикова](https://www.facebook.com/dasha.novikova.357/), [Диана Ногай](https://www.facebook.com/nogai.diana/) и другие любители свободного слова и изящного слога.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Посмотрите на ["Высоконравственный сигнал" на GitHub Pages](https://melnikovaleksei.github.io/hackathon-25/)
 
-### `npm run build`
+## Функционал:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* Поиск стихотворной строки по заданным параметрам (вид проблемы и настроение пользователя);
+* Возможность скопировать текст стихотворения с помощью специальной кнопки;
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Технологии:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* React JS
 
-### `npm run eject`
+## Инструкция по установке:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Клонировать репозиторий:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`
+git clone https://github.com/MelnikovAleksei/hackathon-25
+`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+В директории проекта запустить приложение в режиме разработки:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```
+npm install
+npm start
+```
 
-## Learn More
+## Будущая доработка проекта будет включать в себя:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* Реализацию функционала отправки данных пользователя и гражданской инициативы в виде стихотворной строки на удаленный сервер;
+* Создание интерфейса для приложения;
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Языки:
 
-### Code Splitting
+* JavaScript
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Библиотеки:
 
-### Analyzing the Bundle Size
+* Reactjs
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Бриф хакатона:
 
-### Making a Progressive Web App
+* [Бриф Хакатона 2025: "Гражданин-поэт"](https://www.notion.so/2025-f881ac2ef39f4275959a80c7ce778651)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Макеты проектной работы в Figma:
 
-### Advanced Configuration
+* [Макет 1](https://www.figma.com/file/liGrz1eMG5ds7VJaIgiYP8/hackaton_2025?node-id=60%3A2)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## Авторы:
 
-### Deployment
+* [Дарья Куриленок](https://www.behance.net/dashakrl) - студентка факультета ["Дизайнер-интерфейсов"](https://praktikum.yandex.ru/interface-designer/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+* [Диана Фёдорова](https://www.behance.net/userdarknec380) - студентка факультета ["Дизайнер-интерфейсов"](https://praktikum.yandex.ru/interface-designer/)
 
-### `npm run build` fails to minify
+* [Наталия Казилина](https://www.behance.net/nataly_kazilina) - студентка факультета ["Дизайнер-интерфейсов"](https://praktikum.yandex.ru/interface-designer/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* [Алексей Мельников](https://github.com/MelnikovAleksei) - студент факультета ["Веб-разработчик"](https://praktikum.yandex.ru/web/)
+
+* [enswbl](https://github.com/enswbl) - студент факультета ["Веб-разработчик"](https://praktikum.yandex.ru/web/)
+
+* [Саша Зотов](https://github.com/alzot89) - студент факультета ["Веб-разработчик"](https://praktikum.yandex.ru/web/)

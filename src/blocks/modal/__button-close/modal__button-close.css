@@ -1,0 +1,22 @@
+.modal__button-close {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1;
+  color: #000000;
+  background-color: unset;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 auto 50px auto;
+}
+
+.modal__button-close:focus {
+  font-style: italic;
+}
+
+.modal__button-close:hover {
+  font-style: italic;
+}

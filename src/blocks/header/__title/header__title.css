@@ -1,0 +1,23 @@
+.header__title {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.14;
+  white-space: pre-line;
+  margin: 0;
+  padding: 16px 0 16px 70px;
+  color: #000000;
+}
+
+@media screen and (max-width: 300px) {
+  .header__title {
+    padding-left: 40px;
+  }
+}
+
+@media screen and (max-width: 240px) {
+  .header__title {
+    padding-left: 15px;
+  }
+}

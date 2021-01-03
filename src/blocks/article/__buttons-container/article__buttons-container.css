@@ -1,0 +1,12 @@
+.article__buttons-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 24px 0;
+}
+
+
+@media screen and (min-height: 600px) {
+  .article__buttons-container {
+    padding: 44px 0;
+  }
+}
